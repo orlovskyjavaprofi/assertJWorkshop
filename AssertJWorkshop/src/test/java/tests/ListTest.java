@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 class ListTest {
 
 	@Test(dataProvider = "simpledataprovidertest")
-	void stringTest(List<String> input) {
+	void listTest(List<String> input) {
 		List<String> expected = Arrays.asList("apple",
 				"ball");
 		assertThat(input).hasSize(3)
