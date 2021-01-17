@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-17T16:35:13 MEZ" name="Default suite" finished-at="2021-01-17T16:35:13 MEZ" duration-ms="155">
+  <suite started-at="2021-01-17T17:36:39 MEZ" name="Default suite" finished-at="2021-01-17T17:36:45 MEZ" duration-ms="5882">
     <groups>
     </groups>
-    <test started-at="2021-01-17T16:35:13 MEZ" name="Default test" finished-at="2021-01-17T16:35:13 MEZ" duration-ms="155">
-      <class name="tests.FileTest">
-        <test-method signature="fileTest()[pri:0, instance:tests.FileTest@45b9a632]" started-at="2021-01-17T16:35:13 MEZ" name="fileTest" finished-at="2021-01-17T16:35:13 MEZ" duration-ms="119" status="PASS">
+    <test started-at="2021-01-17T17:36:39 MEZ" name="Default test" finished-at="2021-01-17T17:36:45 MEZ" duration-ms="5882">
+      <class name="uitests.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:uitests.SearchTest@96def03]" started-at="2021-01-17T17:36:39 MEZ" name="setup" finished-at="2021-01-17T17:36:43 MEZ" duration-ms="3448" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileTest -->
-      </class> <!-- tests.FileTest -->
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:uitests.SearchTest@96def03]" started-at="2021-01-17T17:36:43 MEZ" name="pageSetup" finished-at="2021-01-17T17:36:43 MEZ" depends-on-methods="uitests.BaseTest.setup" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="launchSite()[pri:0, instance:uitests.SearchTest@96def03]" started-at="2021-01-17T17:36:43 MEZ" name="launchSite" finished-at="2021-01-17T17:36:44 MEZ" duration-ms="1145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchSite -->
+        <test-method signature="keywordTest()[pri:0, instance:uitests.SearchTest@96def03]" started-at="2021-01-17T17:36:44 MEZ" name="keywordTest" finished-at="2021-01-17T17:36:44 MEZ" depends-on-methods="uitests.SearchTest.launchSite" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- keywordTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:uitests.SearchTest@96def03]" started-at="2021-01-17T17:36:44 MEZ" name="quit" finished-at="2021-01-17T17:36:45 MEZ" duration-ms="756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- uitests.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
