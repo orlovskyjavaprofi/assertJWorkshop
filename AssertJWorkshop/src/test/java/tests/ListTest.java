@@ -20,13 +20,17 @@ class ListTest {
 				"ball");
 		assertThat(input).hasSize(3)
 				.doesNotContain("cat")
-				.containsAll(expected);
+				.containsAll(expected).allSatisfy(
+						str -> assertThat(str.length())
+								.isGreaterThanOrEqualTo(
+										4));
 	}
 
 	@DataProvider(name = "simpledataprovidertest")
 	public Object[] getData() {
 		return new Object[]{
-				Arrays.asList("ball", "apple", "car")};
+				Arrays.asList("ball", "apple",
+						"card")};
 	}
 
 }
